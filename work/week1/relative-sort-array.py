@@ -2,7 +2,7 @@ class Solution:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
         result = []
         arrx = []
-        from collections import Counter
+        
         my_dict = Counter(arr1)
         
         for i in arr2:
