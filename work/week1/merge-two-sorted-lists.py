@@ -25,9 +25,6 @@ class Solution:
             if p1.val == p2.val:
                 node1 = Node(p1.val)
                 node2 = Node(p2.val)
-
-                # self.head = node1
-                # node1.next = node2
                 p1 = p1.next
                 p2 = p2.next
                 if last:
@@ -45,7 +42,7 @@ class Solution:
                 last = node1
                 
                 p1 = p1.next
-                # print(self.head.val)
+                
             else:
                 node2 = Node(p2.val)
                 if last:
@@ -54,7 +51,7 @@ class Solution:
                     self.head = node2
                 last = node2
                 p2 = p2.next
-                # print(self.head.val)
+                
         if p1:
             last.next = p1
         if p2:
